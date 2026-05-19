@@ -4,8 +4,6 @@ import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-phantom'
 import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 
-require('@solana/wallet-adapter-react-ui/styles.css')
-
 const RPC = process.env.NEXT_PUBLIC_RPC_URL || 'https://api.mainnet-beta.solana.com'
 
 export function SolanaWalletProvider({ children }: { children: React.ReactNode }) {
